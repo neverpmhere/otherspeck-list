@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        #copyMessage {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #lastClick {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="button">&lt;</a>
+    <button class="button" onclick="copyText(this)">57154</button>
+    <button class="button" onclick="copyText(this)">8819</button> 
+    <button class="button" onclick="copyText(this)">22974</button>
+    <button class="button" onclick="copyText(this)">53118</button>
+    <button class="button" onclick="copyText(this)">60158</button>
+    <button class="button" onclick="copyText(this)">55617</button>
+    <button class="button" onclick="copyText(this)">54059</button>
+    <button class="button" onclick="copyText(this)">46075</button>
+    <button class="button" onclick="copyText(this)">1731</button>
+    <button class="button" onclick="copyText(this)">49216</button>
+    <button class="button" onclick="copyText(this)">91856</button>
+    <button class="button" onclick="copyText(this)">97524</button>
+    <button class="button" onclick="copyText(this)">24446</button>
+    <button class="button" onclick="copyText(this)">2324</button>
+    <button class="button" onclick="copyText(this)">201</button>
+    <button class="button" onclick="copyText(this)">59611</button>
+    <button class="button" onclick="copyText(this)">59880</button>
+    <button class="button" onclick="copyText(this)">60105</button>
+    <button class="button" onclick="copyText(this)">60165</button>
+    <button class="button" onclick="copyText(this)">60322</button>
+
+
+    <div id="copyMessage">Text "<span id="copiedText"></span>" was copied</div>
+    <div id="lastClick">Last Click: <span id="lastClickedButton">None</span></div>
+
+    <script>
+        function copyText(button) {
+            const textToCopy = button.textContent;
+            const tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.setAttribute("value", textToCopy);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            const copyMessage = document.getElementById("copyMessage");
+            const copiedText = document.getElementById("copiedText");
+            copiedText.textContent = textToCopy;
+            copyMessage.style.display = "block";
+            
+            setTimeout(function() {
+                copyMessage.style.display = "none";
+            }, 2000);
+            
+            const lastClickedButton = document.getElementById("lastClickedButton");
+            lastClickedButton.textContent = textToCopy;
+        }
+    </script>
+</body>
+</html>
