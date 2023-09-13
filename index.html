@@ -43,7 +43,6 @@
         .ofl {
             margin: 20px;
         }
-
     </style>
 </head>
 <body>
@@ -337,7 +336,16 @@
         </span>
         <h1>Discord</h1>
         <span>If need fix something</span>
-    </a>
+    </a> 
 </div>
+    <button id="removeImagesButton">Remove Deed</button>
+     <script>
+        document.getElementById("removeImagesButton").addEventListener("click", function () {
+            var images = document.querySelectorAll(".icon img[src='deed.png']");
+            images.forEach(function (image) {
+                image.remove();
+            });
+        });
+    </script>
 </body>
 </html>
