@@ -1,71 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #333;
+        }
 
-    li {
-      margin: 5px;
-    }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
 
-    a {
-      text-decoration: none;
-      color: #000;
-    }
+        .button {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: #444;
+            color: deepskyblue;
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid black;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
-    .message-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: lightblue;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .message-button:hover {
-      background-color: #333;
-    }
-  </style>
+        .button:hover {
+        background-color: #666;
+        }
+
+        .ofl {
+            margin: 20px;
+        }
+
+    </style>
 </head>
 <body>
-  <ul>
-    <li><a href="Acid.html">Acid</a></li>
-    <li><a href="Bog.html">Bog</a></li>
-    <li><a href="Biolume.html">Biolume</a></li>
-    <li><a href="Bone.html">Bone</a></li>
-    <li><a href="Botanical.html">Botanical</a></li>
-    <li><a href="Chaos.html">Chaos</a></li>
-    <li><a href="Crimson.html">Crimson</a></li>
-    <li><a href="Crystal.html">Crystal</a></li>
-    <li><a href="Glacia.html">Glacia</a></li>
-    <li><a href="Jungle.html">Jungle</a></li>
-    <li><a href="Luster.html">Luster</a></li>
-    <li><a href="Mallow.html">Mallow</a></li>
-    <li><a href="Molten.html">Molten</a></li>
-    <li><a href="Mycelium.html">Mycelium</a></li>
-    <li><a href="Obsidian.html">Obsidian</a></li>
-    <li><a href="Plague.html">Plague</a></li>
-    <li><a href="Ruins.html">Ruins</a></li>
-    <li><a href="Sands.html">Sands</a></li>
-    <li><a href="Shadow.html">Shadow</a></li>
-    <li><a href="Spires.html">Spires</a></li>
-    <li><a href="Splinter.html">Splinter</a></li>
-    <li><a href="Steppes.html">Steppes</a></li>
-    <li><a href="Sulfuric.html">Sulfuric</a></li>
-    <li><a href="Sky.html">Sky</a></li>
-    <li><a href="Thornwood.html">Thornwood</a></li>
-    <li><a href="Veldan.html">Veldan</a></li>
-    <li><a href="Wastes.html">Wastes</a></li>
-</ul>
-<a href="https://discord.com/users/406150137786925067" target="_blank" class="message-button"></a>
+    <div class="ofl">
+        <h1>OTHERSPECK FARM LIST</h1>
+    </div>
+    <div class="buttons">
+    <a href="Acid.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chemicalgooz.png">
+            <img src="bonez.png">
+        </span>
+        <h1>Acid</h1>
+        <span>Chemical Gooz & Bonez</span>
+    </a>
+
+    <a href="Biolume.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chemicalgooz.png">
+            <img src="bonsaiz.png">
+        </span>
+        <h1>Biolume</h1>
+        <span>Chemical Gooz & Bonsaiz</span>
+    </a>
+
+    <a href="Bone.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="bonez.png">
+            <img src="gemz.png">
+        </span>
+        <h1>Bone</h1>
+        <span>Bonez & Gemz</span>
+    </a>
+
+    <a href="Bog.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="logz.png">
+        </span>
+        <h1>Bog</h1>
+        <span>Logz</span>
+    </a>
+
+    <a href="Botanical.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="logz.png">
+            <img src="featherz.png">
+        </span>
+        <h1>Botanical</h1>
+        <span>Logz & Featherz</span>
+    </a>
+
+    <a href="Chaos.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chaoz.png">
+        </span>
+        <h1>Chaos</h1>
+        <span>Chaoz</span>
+    </a>
+
+    <a href="Crimson.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="lvastonez.png">
+            <img src="mechz.png">
+        </span>
+        <h1>Crimson</h1>
+        <span>L'vastonez & Mechz</span>
+    </a>
+
+    <a href="Crystal.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="lvastonez.png">
+            <img src="chipz.png">
+        </span>
+        <h1>Crystal</h1>
+        <span>L'vastonez & Chipz</span>
+    </a>
+
+    <a href="Glacia.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="mechz.png">
+        </span>
+        <h1>Glacia</h1>
+        <span>Mechz</span>
+    </a>
+
+    <a href="Jungle.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="logz.png">
+            <img src="bonsaiz.png">
+        </span>
+        <h1>Jungle</h1>
+        <span>Logz & Bonsaiz</span>
+    </a>
+
+    <a href="Luster.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chipz.png">
+            <img src="mechz.png">
+        </span>
+        <h1>Luster</h1>
+        <span>Chipz & Mechz</span>
+    </a>
+
+    <a href="Molten.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="lvastonez.png">
+        </span>
+        <h1>Molten</h1>
+        <span>L'vastonez</span>
+    </a>
+
+    <a href="Mallow.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chemicalgooz.png">
+        </span>
+        <h1>Mallow</h1>
+        <span>Chemical Gooz</span>
+    </a>
+
+    <a href="Mystic.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chipz.png">
+            <img src="purpleboz.png">
+        </span>
+        <h1>Mystic</h1>
+        <span>Chipz & Purple Boz</span>
+    </a>
+
+    <a href="Mycelium.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="bonez.png">
+            <img src="bonsaiz.png">
+        </span>
+        <h1>Mycelium</h1>
+        <span>Bonez & Bonsaiz</span>
+    </a>
+
+    <a href="Obsidian.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="lvastonez.png">
+            <img src="ironz.png">
+        </span>
+        <h1>Obsidian</h1>
+        <span>L'vastonez & Ironz</span>
+    </a>
+
+    <a href="Plague.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="gemz.png">
+            <img src="chaoz.png">
+        </span>
+        <h1>Plague</h1>
+        <span>Gemz & Chaoz</span>
+    </a>
+
+    <a href="Ruins.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="purpleboz.png">
+        </span>
+        <h1>Ruins</h1>
+        <span>Purple Boz</span>
+    </a>
+
+    <a href="Sands.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="ironz.png">
+        </span>
+        <h1>Sands</h1>
+        <span>Ironz</span>
+    </a>
+
+    <a href="Shadow.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="purpleboz.png">
+            <img src="chaoz.png">
+        </span>
+        <h1>Shadow</h1>
+        <span>Purple Boz & Chaoz</span>
+    </a>
+
+    <a href="Sky.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="featherz.png">
+        </span>
+        <h1>Sky</h1>
+        <span>Featherz</span>
+    </a>
+
+    <a href="Sludge.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chemicalgooz.png">
+            <img src="mechz.png">
+        </span>
+        <h1>Sludge</h1>
+        <span>Chemical Gooz & Mechz</span>
+    </a>
+
+    <a href="Spires.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="ironz.png">
+            <img src="featherz.png">
+        </span>
+        <h1>Spires</h1>
+        <span>Ironz & Featherz</span>
+    </a>
+
+    <a href="Splinter.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="gemz.png">
+            <img src="lvastonez.png">
+            <img src="ironz.png">
+        </span>
+        <h1>Splinter</h1>
+        <span>Gemz & L'vastonez & Ironz</span>
+    </a>
+
+    <a href="Steppes.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="featherz.png">
+            <img src="purpleboz.png">
+        </span>
+        <h1>Steppes</h1>
+        <span>Featherz & Purple Boz</span>
+    </a>
+
+    <a href="Sulfuric.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="bonez.png">
+        </span>
+        <h1>Sulfuric</h1>
+        <span>Bonez</span>
+    </a>
+
+    <a href="Thornwood.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="logz.png">
+            <img src="chaoz.png">
+        </span>
+        <h1>Thornwood</h1>
+        <span>Logz & Chaoz</span>
+    </a>
+
+    <a href="Veldan.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="chipz.png">
+        </span>
+        <h1>Veldan</h1>
+        <span>Chipz</span>
+    </a>
+
+    <a href="Wastes.html" class="button">
+        <span class="icon">
+            <img src="deed.png">
+            <img src="gemz.png">
+        </span>
+        <h1>Wastes</h1>
+        <span>Gemz</span>
+    </a>
+
+    <a href="https://discord.com/users/406150137786925067" target="_blank" class="button">
+        <span class="icon">
+            <img src="drill.png">
+        </span>
+        <h1>Discord</h1>
+        <span>If need fix something</span>
+    </a>
+</div>
 </body>
 </html>
